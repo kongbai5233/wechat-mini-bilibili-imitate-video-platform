@@ -1,0 +1,24 @@
+<!-- 区域1：登录面板 -->
+<view id='myLogin'>
+  <block wx:if='{{isLogin}}'>
+    <image id='myIcon' src='{{src}}'></image>
+    <text id='myName'>{{nickName}}</text>
+  </block>
+  <button wx:else open-type='getUserInfo' bindgetuserinfo='getMyInfo'>未登录，点此登录</button>
+</view>
+
+<block wx:if="{{isLogin}}">
+  <view class="content">
+    <view class="content_list" wx:for="{{list}}" mark:now="{{index}}" wx:key="{{index}}" bind:tap="getfunction">
+      <image src="{{item.src}}" />
+      <text>{{item.text}}</text>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="noLogin">
+    <image src="../../images/user_login.png" />
+     <text>登录后精彩更多</text>
+  </view>
+</block>
+

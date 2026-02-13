@@ -1,0 +1,17 @@
+<image class="bg" src="../../images/add.jpg" mode=""/>
+
+<block wx:if="{{num>0}}">
+<view class="container">
+  <view class="content">
+    <view class="content_list" wx:for="{{addList}}"  bind:tap="goToplay">
+      <image class="pic" src="{{item.poster}}" mark:_id="{{item._id}}"  mode=""/>
+      <view class="title"  mark:_id="{{item._id}}" >{{item.title}}</view>
+    </view>
+  </view>
+</view>
+</block>
+<block wx:else>
+  <view class='noshow'>
+    <text>还未给作品点赞</text>
+  </view>
+</block>

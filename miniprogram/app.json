@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/space/space",
+    "page/user/user",
+    "page/play/play",
+    "page/detail/detail",
+    "page/game/game",
+    "page/write/write",
+    "page/about_me/about_me",
+    "page/love/love",
+    "page/add/add"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "批哩批哩",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#31869B",
+    "list": [{
+      "pagePath": "page/index/index",
+      "text": "首页",
+      "iconPath": "/images/index.png",
+      "selectedIconPath": "/images/index_blue.png"
+      
+    }, {
+      "pagePath": "page/space/space",
+      "text": "空间",
+    "iconPath": "/images/space.png",
+    "selectedIconPath": "/images/space_choose.png"
+    }, {
+      "pagePath": "page/user/user",
+      "text": "用户",
+      "iconPath": "/images/my.png",
+      "selectedIconPath": "/images/my_blue.png"
+    }]
+  }
+  , "permission": {
+    "scope.userLocation": {
+        "desc": "你的位置信息将用于小程序位置接口的调用"
+    }
+}
+}

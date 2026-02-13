@@ -1,0 +1,38 @@
+
+.bg{
+  position:absolute;
+  z-index: -9;
+  opacity: 60%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.top {
+  width: 100vw;
+  padding: 30rpx 0;
+}
+.top .user-img {
+  width: 252rpx;
+  margin: 0 auto;
+ }
+.top image {
+ width: 252rpx;
+ height: 252rpx;
+ border-radius: 50%;
+ border: 6rpx solid #777F92;
+} 
+.menu{
+width: 100vw;
+text-align: center;
+font-size: 50rpx;
+font-weight: bolder;
+color: red;
+}

@@ -1,0 +1,31 @@
+<!-- 仿照微信朋友圈 -->
+<block wx:if="{{isLogin}}">
+ <view class="container">
+  <!-- 上半区展示用户和发帖 -->
+<view class="showUser">
+  <view class="showUser_bg">
+  <image class="showUser_bgimg"src="{{img_bg}}" mode=""/>
+    <image class="write"src="../../images/编辑.png" bind:tap="goToWrite" mode=""/>
+    <image class="change"src="../../images/changge_bg.png" bind:tap="ChangeBg" mode=""/>
+    <image class="user_icon"src="{{user_icon}}" mode=""/>
+  </view>
+</view>
+
+  
+  <!-- 上半区展示内容 -->
+  <view class="content">
+    <view class="content_list" wx:for="{{article}}" mark:id="{{item.id}}" mark:_id="{{item._id}}" bind:tap="goTodetail">
+        <image src="{{item.poster}}" mode=""/>
+        <text>◇{{item.title}}</text>
+    </view>
+  </view>
+ </view>
+
+</block>
+<block wx:else>
+  <view class="noLogin">
+    <image src="../../images/no_login.png" />
+     <text>登录后精彩更多</text>
+     <button type="primary" bind:tap="gotoLogin">前往登录</button>
+  </view>
+</block>

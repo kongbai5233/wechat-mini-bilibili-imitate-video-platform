@@ -1,0 +1,13 @@
+<!--page/detail/detail.wxml-->
+<view class='container'>
+  <view class='title'>{{article.title}}</view>
+  <view class='poster'>
+    <image src='{{article.poster}}' mode='widthFix'></image>
+  </view>
+  <view class='content'>{{article.content}}</view>
+  <view class='add_date'>时间：{{article.add_date}}</view>
+  <view class='add_date'>作者：{{article.write}}</view>
+  <button wx:if='{{isAdd}}' plain bindtap='cancelFavorites'>♥已收藏</button>
+  <button wx:else plain bindtap='addFavorites'>♥点击收藏</button>
+  <button wx:if="{{my_art}}" bindtap='removeTap' type="warn">删除</button>
+</view>

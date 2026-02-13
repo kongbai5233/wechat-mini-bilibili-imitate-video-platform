@@ -1,0 +1,23 @@
+<video
+loop        
+muted
+controls="{{false}}"
+show-play-btn="{{false}}"
+show-center-play-btn="{{false}}"
+enable-progress-gesture="{{false}}"
+object-fit="cover"
+autoplay
+src="{{src}}" class="bg"/>
+
+<view class="container">
+ 
+    <view class="top">
+      <view class="user-img">
+       <image src="{{user_img}}" />
+     </view>
+     </view>
+
+     <view class="menu">
+      <view class="item">用户名：{{name}}</view>
+    </view>
+ </view> 

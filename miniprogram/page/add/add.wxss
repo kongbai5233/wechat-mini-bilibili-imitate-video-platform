@@ -1,0 +1,53 @@
+.container{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.content{
+  margin-top: 30rpx;
+}
+.content_list{
+  width: 100vw;
+  height: 20vh;
+
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding-top: 5rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 2rpx grey solid;
+}
+.content_list .pic{
+  padding-left: 10rpx;
+  height: 20vh;
+  width: 50vw;
+}
+
+.content_list .title{
+  margin-top: 50rpx;
+  font-size: 38rpx;
+  padding-left: 20rpx;
+
+}
+
+.noshow{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.noshow text{
+  font-size: 80rpx;
+  font-weight: bolder;
+  color: red;
+}
+.bg{
+  position:fixed;
+  left: 0;
+  top: 0;
+  z-index: -9;
+  opacity: 80%;
+  width: 100vw;
+  height: 120vh;
+}

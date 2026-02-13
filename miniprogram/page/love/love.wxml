@@ -1,0 +1,16 @@
+<image class="bg" src="../../images/love.png" mode=""/>
+<block wx:if="{{num>0}}">
+  <view class="container">
+  <view class="content">
+    <view class="content_list" wx:for="{{addList}}"  bind:tap="goToplay">
+      <image class="pic"  mark:type="{{item.type}}" mark:id="{{item.id}}" src="{{item.poster}}" mark:_id="{{item._id}}"  mode=""/>
+      <view class="title"  mark:type="{{item.type}}" mark:id="{{item.id}}" mark:_id="{{item._id}}" >{{item.title}}</view>
+    </view>
+  </view>
+</view>
+</block>
+<block wx:else>
+  <view class='noshow'>
+    <text>收藏夹空空如也</text>
+  </view>
+</block>

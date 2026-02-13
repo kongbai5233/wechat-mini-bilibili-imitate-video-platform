@@ -1,0 +1,70 @@
+/* page/user/user.wxss */
+#myLogin{
+  background-color: #328eeb;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#myIcon{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+
+#myName{
+  color:white;
+}
+
+.content{
+  margin-top: 30rpx;
+
+  height: 750rpx;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.content_list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 50vw;
+  border-right:1rpx solid gray;
+  border-bottom:1rpx solid gray;
+  height: 250rpx;
+}
+.content_list:nth-child(2n){
+  border-right: 0;
+}
+.content_list:nth-child(5){
+  border-bottom: 0;
+}
+.content_list:nth-child(6){
+  border-bottom: 0;
+}
+.content_list image{
+width: 70%;
+height: 100rpx;
+}
+
+.noLogin{
+  margin-top: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+align-items: center;
+font-size: 40rpx;
+font-weight: bolder;
+color: blue;
+}
+.noLogin image{
+  width: 100%;
+  height: 500rpx;
+  margin-bottom: 50rpx;
+
+}

@@ -1,0 +1,86 @@
+
+/* 未登录区域 */
+.noLogin{
+  width: 100vw;
+  height: 80vh;
+  margin-top: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40rpx;
+  font-weight: bolder;
+  color: blue;
+}
+.noLogin button{
+  margin-top: 50rpx;
+
+}
+.noLogin image{
+  width: 100%;
+  height: 500rpx;
+  margin-bottom: 50rpx;
+}
+/* 登录区域 */
+/* 上班区 */
+.showUser_bg{
+  width: 100vw;
+  height: 30vh;
+  position: relative;
+
+}
+.showUser_bgimg{
+  width: 100vw;
+  height: 30vh;
+  position: absolute;
+  opacity: 80%;
+  z-index: -1;
+}
+
+
+.showUser_bg .write{
+width: 50rpx;
+height: 50rpx;
+float: right;
+margin-top: 10rpx;
+margin-right: 10rpx;
+}
+
+.showUser_bg .change{
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+  }
+
+.user_icon{
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  right: 0;
+  bottom: -100rpx;
+}
+
+/* 下班区 */
+.content{
+  width: 100vw;
+  margin-top: 150rpx;
+
+}
+.content_list{
+  width: 100vw;
+  height: 20vh;
+
+  border-bottom: 1rpx solid black;
+  display: flex;
+  align-items: center;
+}
+.content_list image{
+width: 40vw;
+height: 18vh;
+}
+.content_list text{
+  padding-left: 15rpx;
+}
+

@@ -1,0 +1,60 @@
+.bg{
+  width: 100vw;
+  height: 100vh;
+  position:absolute;
+  z-index: -1;
+  opacity: 60%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  margin-top: 50rpx;
+  border: 2rpx solid black;
+  padding-left: 10rpx;
+  width: 95vw;
+  height: 7vh;
+  font-weight: bolder;
+}
+
+textarea{
+  margin-top: 60rpx;
+  border: 2rpx solid black;
+  padding-left: 10rpx;
+  padding-top: 10rpx;
+  width: 95vw;
+  height: 50vh;
+  font-weight: bolder;
+}
+.choose{
+  width: 95vw;
+  margin: 20rpx;
+  display: flex;
+  justify-content: space-evenly;
+position: relative;
+}
+.btn{
+  position:absolute;
+  left: 0;
+  width: 300rpx;
+  height: 100rpx;
+}
+
+.choose image{
+  margin-left: 300rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.give{
+  margin-top: 100rpx;
+  text-align: center;
+  font-weight: bolder;
+  width: 30vw;
+  height: 7vh;
+}

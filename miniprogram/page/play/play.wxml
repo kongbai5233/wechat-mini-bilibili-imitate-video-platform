@@ -1,0 +1,47 @@
+<!--page/play/play.wxml-->
+<view class="container">
+  <view class="front">
+    <image src="../../images/logo.png" mode="scaleToFill" class="logo" />
+    <image bind:tap="Search" src="../../images/search.png" mode="scaleToFill" class="search" />
+  </view>
+
+  <video src="{{move.mp4}}"  bindtimeupdate="getLength"
+   enable-danmu danmu-btn danmu-list="{{danmuList}}" controls id="myVideo" />
+
+  <view class="danmuArea">
+    <input type="text" placeholder="请输入弹幕内容" bindinput="getDanmu" />
+
+    <button type="primary" bind:tap="sendDanmu">发送弹幕</button>
+
+  </view>
+
+  <view class="content">
+    <view class="title">标题：{{move.title}}</view>
+    <view class="up">作者：{{move.UP}}</view>
+    <view class="function">
+      <view class="good">
+        <image bind:tap="NOGood" wx:if="{{isAdd}}" src="../../images/is_like.png" mode="" />
+        <image bind:tap="Good" wx:else="" src="../../images/is_no_like.png" mode="" />
+        
+        <text>点赞</text>
+      </view>
+      <view class="collect">
+        <image bind:tap="NOLike" wx:if="{{islove}}" src="../../images/is_collected.png" mode="" />
+        <image bind:tap="Like" wx:else="" src="../../images/is_no_collected.png" mode="" />
+        <text>收藏</text>
+      </view>
+    </view>
+
+  </view>
+
+
+  <view class="list_content">
+    <view wx:for="{{content}}" wx:key="index" class="content_list"  bind:tap="watchMove">
+     <image class="img" src="{{item.poster}}" mark:_id="{{item._id}}" mode=""/>
+      <view class="title"  mark:_id="{{item._id}}">{{item.title}}</view>
+    </view>
+  </view>
+
+
+
+</view>

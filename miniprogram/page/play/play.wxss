@@ -1,0 +1,106 @@
+/* page/play/play.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+}
+.front{
+  display: flex;
+  height: 5vh;
+  width: 100vw;
+  justify-content: space-between;
+  margin-bottom: 5rpx;
+}
+.logo{
+  width: 20vw;
+  height: 5vh;
+}
+.search{
+  width: 8vw;
+  height: 5vh;
+}
+video{
+  width: 100vw;
+}
+
+
+.danmuArea{
+  display: flex;
+}
+
+.danmuArea input{
+  width:65vw;
+  height: 100rpx;
+  margin: 10rpx;
+  margin-left: 5rpx;
+  border: 2px solid lightblue;
+  padding-left:15rpx ;
+  color: blue;
+  font-weight:bolder;
+}
+.danmuArea button{
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight:bolder;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  margin-right: 0;
+}
+.content{
+  border-top: 1rpx gray solid;
+  margin-top: 10rpx;
+  width: 100vw;
+
+}
+.content .title{
+  margin-top: 10rpx;
+  padding-left: 10rpx;
+  font-size: 7vw
+}
+.up{
+  padding-left: 50rpx;
+margin-top: 10rpx;
+font-size: 40rpx;
+}
+
+.function{
+  margin: 30rpx 0;
+  display: flex;
+  justify-content:space-evenly;
+}
+.function image{
+  width: 10vw;
+  height: 10vw;
+}
+
+.good,.collect{
+  display: flex;
+  flex-direction: column;
+}
+
+.content_list{
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border-bottom: 2rpx gray solid;
+  padding-bottom: 10rpx;
+  margin: 20rpx 0;
+}
+
+.img{
+  width: 40vw;
+  height: 20vh;
+  margin-left: 30rpx;
+}
+
+.content_list .title{
+
+  font-size: 50rpx;
+  font-weight: normal;
+  color: red;
+}

@@ -1,0 +1,16 @@
+<!--page/write/write.wxml-->
+<image class="bg" src="../../images/wbg.jpg" mode=""/>
+<view class="container">
+
+  <input bindinput="titleInput" type="text" placeholder="标题（建议10个字以内）" id="" />
+
+  <textarea bindinput="contentnput" placeholder="分享当前时刻" confirm-type="done" value="" />
+
+  <view class="choose">
+    <button bindtap="uploadImg" class="btn" >选择图片</button>
+    <image src="{{imgs}}" mode=""/>
+  </view>
+
+  <button class="give" bindtap="giveup" type="primary" >提交</button>
+
+</view>

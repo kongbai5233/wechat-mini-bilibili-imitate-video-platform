@@ -1,0 +1,17 @@
+<view class="main_container">
+<swiper interval="3000" autoplay 	indicator-color="rgba(225,230,237)" >
+  <swiper-item wx:for="{{swiper_item}}">
+    <image class="swiper_image" src="{{item.src}}" mode="scaleToFill"/>
+  </swiper-item>
+</swiper>
+
+<view class="content">
+<view class="content_list" wx:for="{{content}}" bind:tap="watchMove">
+<image class="img" src="{{item.poster}}" mark:_id="{{item._id}}" mode=""/>
+
+<text  mark:_id="{{item._id}}" >{{item.title}}</text>
+</view>
+
+</view>
+
+</view>
